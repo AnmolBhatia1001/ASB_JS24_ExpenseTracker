@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 1px solid #FAF7F0;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: #06283D;
+    color: #FAF7F0;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    margin: 1.5em 2em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2em;
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1.5em 1em;
+    border-radius: 0.75em;
+    border: 2px solid #FAF7F0;
+}
+
+.dashboardCotainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.heading {
+    font-size: 2.5em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    letter-spacing: 1px;
+}
+
+.dbContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    min-width: 200px;
+}
+
+.dbContainerHeading{
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.dbContainerAmount{
+    font-size: 1.5em;
+}
+
+.dbContainerAmount::before{
+    content: "₹";
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.dashboardCotainer > div{
+    padding: 1em 2em;
+}
+
+
+
+.updateTrackerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.inputDiv{
+    /* border: 1px solid #FAF7F0; */
+    display: flex;
+    padding: 1em;
+    align-items: center;
+}
+
+.inputDiv > label{
+    /* border: 1px solid #FAF7F0; */
+    font-size: 1.75em;
+    width: 175px;
+    /* background-color: red; */
+    display: inline-block;
+}
+
+.inputDiv > input{
+    font-size: 1.25em;
+    width: 175px;
+    background: #FAF7F0;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+}
+
+.btnDiv > button{
+    background-color: #FAF7F0;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-size: 1.25em;
+    font-weight: 700;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+
+
+.transHistoryContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+    gap: 2em;
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    /* border: 2px solid #FAF7F0; */
+    border-radius: 0.5em;
+    padding: 0em 5em;
+}
+
+
+
+.tableHeading{
+    font-size: 1.75em;
+    width: 50%;
+    padding: 0.5em 1em;
+    border-bottom: 2px solid #FAF7F0;
+
+
+}
+
+.tableData{
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-bottom: 2px solid #FAF7F0;
+}
+
+
+.amountData::before{
+    content: "- ₹";
+    margin-right: 5px;
+    font-size: 1.1em;
+}

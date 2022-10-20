@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- 3:30 AM -->
+<body>
+    <div class="container border">
+
+        <div class="dashboard subContainer border">
+            <h2 class="heading">Dashboard</h2>
+
+            <div class="dashboardCotainer border">
+
+                <div class="incomeDiv dbContainer border">
+                    <h3 class="dbContainerHeading">Income</h3>
+                    <div class="dbContainerAmount">100000</div>
+                </div>
+    
+                <div class="expenseDiv dbContainer border">
+                    <h3 class="dbContainerHeading">Expense</h3>
+                    <div class="dbContainerAmount">50000</div>
+                </div>
+    
+                <div class="balanceDiv dbContainer border">
+                    <h3 class="dbContainerHeading">Balance</h3>
+                    <div class="dbContainerAmount">50000</div>
+                </div>
+            </div>
+
+        </div>
+
+       <div class="updateTracker subContainer border">
+            <h2 class="heading"> UpdateTracker</h2>
+
+            <div class="updateTrackerContainer">
+                <div class="inputDiv">
+                    <label class="label" for="inputDescription">Description :</label>
+                    <input type="text" id="inputDescription">
+                </div>
+    
+                <div class="inputDiv">
+                    <label for="inputAmount">Amount : </label>
+                    <input type="number" id="inputAmount">
+                </div>
+                
+            </div>
+
+            <div class="btnDiv">
+                <button id="updateBtn">Update</button>
+            </div>
+
+        </div>
+         
+        <div class="transHistory subContainer ">
+            <h2 class="heading">Transaction History</h2>
+
+            <div class="transHistoryContainer ">
+                <table class="">
+                    <tr class="tableRow">
+                        <th class="tableHeading ">Description</th>
+                        <th class="tableHeading ">Amount</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td class="tableData descriptionData ">abc</td>
+                        <td class="tableData amountData ">10</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
